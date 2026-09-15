@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from portfolio.models import (
     Profile,
     Skill,
@@ -89,3 +90,9 @@ def home(request):
         "contact_section": contact_section,
         "footer_section": footer_section,
     })
+
+def robots_txt(request):
+    return HttpResponse(
+        "User-agent: *\nAllow: /\n",
+        content_type="text/plain"
+    )
