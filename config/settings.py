@@ -135,6 +135,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 SECURE_SSL_REDIRECT = not DEBUG
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
+SECURE_HSTS_SECONDS = 31536000
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
