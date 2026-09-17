@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ profile.name }} | Developer & AI Enthusiast</title>
+    <title>{{ profile.name }} | Python & Django Developer | AI Enthusiast</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <meta
         name="description"
-        content="{{ profile.name }}'s personal portfolio — developer, language educator, AI enthusiast and lifelong learner."
+        content="{{ profile.name }}'s portfolio — Python & Django developer, AI enthusiast, language educator, and creator of practical software projects."
     >
 
     <meta name="google-site-verification" content="dKRVma2AEM13mFbrYf0nlnlEyCwJHGYisSKHK_Nu3jI" />
@@ -40,7 +40,9 @@
             {% endfor %}
 
             </div>
-
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
         </nav>
     </header>
 
@@ -988,7 +990,7 @@
 
 </footer>
 
-
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>

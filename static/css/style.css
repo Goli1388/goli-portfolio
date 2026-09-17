@@ -113,6 +113,15 @@ nav {
     color: #ffffff;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f5f5f5;
+    font-size: 28px;
+    cursor: pointer;
+}
+
 
 /* =========================================================
    HERO
@@ -1773,6 +1782,22 @@ nav {
 
     .nav-links {
         display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: rgba(11, 11, 15, 0.95);
+        padding: 20px;
+        border-radius: 12px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+     }
+
+    .menu-toggle {
+        display: block;
     }
 
     section {

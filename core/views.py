@@ -93,6 +93,8 @@ def home(request):
 
 def robots_txt(request):
     return HttpResponse(
-        "User-agent: *\nAllow: /\n",
+        "User-agent: *\n"
+        "Allow: /\n"
+        "Disallow: /admin/\n",
         content_type="text/plain"
     )
